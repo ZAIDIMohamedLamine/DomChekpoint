@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">DZ GAMER</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cart</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">   
+     <!-- This is the shop page -->
+    <div id="shop">
+       
+        <ul id="items">
+          <li data-item-id="1">
+            <img style="height: 300px; width: 250px;" src="https://th.bing.com/th/id/R.7be23b29bcc9f3b7fa700ffac6abd0e6?rik=Qj8ymDPNaCunqw&pid=ImgRaw&r=0" alt="" srcset="">
+            <h3>Need For speed</h3>
+            <p>$50</p>
+            <button class="add-to-cart">Add to cart</button>
+            <button id="heart-button" class="heart">
+              <i class="fas fa-heart"></i>
+            </button>
+            
+          </li>
+          <li data-item-id="2">
+            <img style="height: 300px; width: 250px;" src="https://megastorestudios.com/wp-content/uploads/2022/10/FIFA-23-PS5.jpg" alt="" srcset="">
+            <h3>FIFA 23</h3>
+            <p>$60</p>
+            <button class="add-to-cart">Add to cart</button>
+            <button id="heart-button1" class="heart1">
+              <i class="fas fa-heart"></i>
+            </button>
+            
+          </li>
+          <li data-item-id="3">
+            <img style="height: 300px; width: 250px;" src="https://www.01net.com/app/uploads/2021/10/far-cry-6-offre-promo.jpg" alt="" srcset="">
+            <h3>FARCRY 6</h3>
+            <p>$30</p>
+            <button class="add-to-cart">Add to cart</button>
+            <button id="heart-button2" class="heart2">
+              <i class="fas fa-heart"></i>
+            </button>
+            
+          </li>
+          
+        </ul>
+      </div>
+      
+      <!-- This is the shopping cart page -->
+      <div id="cart">
+        
+        <ul id="cart-items">
+         
+        </ul>
+        <!-- This is the "Calculate" button -->
+        <button id="calculate-total">Calculate</button>
+        
+        <p id="total"></p>
+      </div>
+    </div>
+    <footer class="bg-primary py-3 text-center text-white">
+      <p>Copyright © DZ GAMER</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
